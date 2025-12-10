@@ -1,0 +1,17 @@
+C:\JennipherM\C#\OOP_ Class\SemesterProject_OOP\FINALPROJECT(inventory)\bin\Debug\net8.0-windows\FINALPROJECT(inventory).exe
+C:\JennipherM\C#\OOP_ Class\SemesterProject_OOP\FINALPROJECT(inventory)\bin\Debug\net8.0-windows\FINALPROJECT(inventory).deps.json
+C:\JennipherM\C#\OOP_ Class\SemesterProject_OOP\FINALPROJECT(inventory)\bin\Debug\net8.0-windows\FINALPROJECT(inventory).runtimeconfig.json
+C:\JennipherM\C#\OOP_ Class\SemesterProject_OOP\FINALPROJECT(inventory)\bin\Debug\net8.0-windows\FINALPROJECT(inventory).dll
+C:\JennipherM\C#\OOP_ Class\SemesterProject_OOP\FINALPROJECT(inventory)\bin\Debug\net8.0-windows\FINALPROJECT(inventory).pdb
+C:\JennipherM\C#\OOP_ Class\SemesterProject_OOP\FINALPROJECT(inventory)\obj\Debug\net8.0-windows\FINALPROJECT_inventory_.Form1.resources
+C:\JennipherM\C#\OOP_ Class\SemesterProject_OOP\FINALPROJECT(inventory)\obj\Debug\net8.0-windows\FINALPROJECT(inventory).csproj.GenerateResource.cache
+C:\JennipherM\C#\OOP_ Class\SemesterProject_OOP\FINALPROJECT(inventory)\obj\Debug\net8.0-windows\FINALPROJECT(inventory).GeneratedMSBuildEditorConfig.editorconfig
+C:\JennipherM\C#\OOP_ Class\SemesterProject_OOP\FINALPROJECT(inventory)\obj\Debug\net8.0-windows\FINALPROJECT(inventory).AssemblyInfoInputs.cache
+C:\JennipherM\C#\OOP_ Class\SemesterProject_OOP\FINALPROJECT(inventory)\obj\Debug\net8.0-windows\FINALPROJECT(inventory).AssemblyInfo.cs
+C:\JennipherM\C#\OOP_ Class\SemesterProject_OOP\FINALPROJECT(inventory)\obj\Debug\net8.0-windows\FINALPROJECT(inventory).csproj.CoreCompileInputs.cache
+C:\JennipherM\C#\OOP_ Class\SemesterProject_OOP\FINALPROJECT(inventory)\obj\Debug\net8.0-windows\FINALPROJECT(inventory).sourcelink.json
+C:\JennipherM\C#\OOP_ Class\SemesterProject_OOP\FINALPROJECT(inventory)\obj\Debug\net8.0-windows\FINALPROJECT(inventory).dll
+C:\JennipherM\C#\OOP_ Class\SemesterProject_OOP\FINALPROJECT(inventory)\obj\Debug\net8.0-windows\refint\FINALPROJECT(inventory).dll
+C:\JennipherM\C#\OOP_ Class\SemesterProject_OOP\FINALPROJECT(inventory)\obj\Debug\net8.0-windows\FINALPROJECT(inventory).pdb
+C:\JennipherM\C#\OOP_ Class\SemesterProject_OOP\FINALPROJECT(inventory)\obj\Debug\net8.0-windows\FINALPROJECT(inventory).genruntimeconfig.cache
+C:\JennipherM\C#\OOP_ Class\SemesterProject_OOP\FINALPROJECT(inventory)\obj\Debug\net8.0-windows\ref\FINALPROJECT(inventory).dll
