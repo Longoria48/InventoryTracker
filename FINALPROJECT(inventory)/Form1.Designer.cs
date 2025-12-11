@@ -28,68 +28,165 @@
         /// </summary>
         private void InitializeComponent()
         {
-            groupBox1 = new GroupBox();
-            groupBox2 = new GroupBox();
-            radioButton3 = new RadioButton();
-            radioButton2 = new RadioButton();
-            radioButton1 = new RadioButton();
+            Fields = new GroupBox();
+            lbField3 = new Label();
+            lbField4 = new Label();
+            lbField2 = new Label();
+            lbField1 = new Label();
+            tbField4 = new TextBox();
+            tbField3 = new TextBox();
+            tbField2 = new TextBox();
+            tbField1 = new TextBox();
+            radioGroup = new GroupBox();
+            rbStock = new RadioButton();
+            rbLocations = new RadioButton();
+            rbProducts = new RadioButton();
             listBox1 = new ListBox();
-            groupBox2.SuspendLayout();
+            btnAdd = new Button();
+            btnDisplay = new Button();
+            btnUpdate = new Button();
+            groupBox1 = new GroupBox();
+            btnDelete = new Button();
+            lbDelProd = new Label();
+            tbDelProd = new TextBox();
+            lbDelLoc = new Label();
+            tbDelLoc = new TextBox();
+            Fields.SuspendLayout();
+            radioGroup.SuspendLayout();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
-            // groupBox1
+            // Fields
             // 
-            groupBox1.Location = new Point(34, 22);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(382, 161);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
+            Fields.Controls.Add(btnUpdate);
+            Fields.Controls.Add(btnDisplay);
+            Fields.Controls.Add(btnAdd);
+            Fields.Controls.Add(lbField3);
+            Fields.Controls.Add(lbField4);
+            Fields.Controls.Add(lbField2);
+            Fields.Controls.Add(lbField1);
+            Fields.Controls.Add(tbField4);
+            Fields.Controls.Add(tbField3);
+            Fields.Controls.Add(tbField2);
+            Fields.Controls.Add(tbField1);
+            Fields.Location = new Point(34, 100);
+            Fields.Name = "Fields";
+            Fields.Size = new Size(382, 215);
+            Fields.TabIndex = 0;
+            Fields.TabStop = false;
+            Fields.Text = "Insert";
             // 
-            // groupBox2
+            // lbField3
             // 
-            groupBox2.Controls.Add(radioButton3);
-            groupBox2.Controls.Add(radioButton2);
-            groupBox2.Controls.Add(radioButton1);
-            groupBox2.Location = new Point(37, 208);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(382, 87);
-            groupBox2.TabIndex = 1;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "groupBox2";
+            lbField3.AutoSize = true;
+            lbField3.Location = new Point(20, 83);
+            lbField3.Name = "lbField3";
+            lbField3.Size = new Size(38, 15);
+            lbField3.TabIndex = 8;
+            lbField3.Text = "label3";
             // 
-            // radioButton3
+            // lbField4
             // 
-            radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(253, 44);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(94, 19);
-            radioButton3.TabIndex = 2;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "radioButton3";
-            radioButton3.UseVisualStyleBackColor = true;
+            lbField4.AutoSize = true;
+            lbField4.Location = new Point(20, 112);
+            lbField4.Name = "lbField4";
+            lbField4.Size = new Size(38, 15);
+            lbField4.TabIndex = 7;
+            lbField4.Text = "label4";
             // 
-            // radioButton2
+            // lbField2
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(139, 44);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(94, 19);
-            radioButton2.TabIndex = 1;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "radioButton2";
-            radioButton2.UseVisualStyleBackColor = true;
+            lbField2.AutoSize = true;
+            lbField2.Location = new Point(20, 54);
+            lbField2.Name = "lbField2";
+            lbField2.Size = new Size(38, 15);
+            lbField2.TabIndex = 6;
+            lbField2.Text = "label2";
             // 
-            // radioButton1
+            // lbField1
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(19, 44);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(94, 19);
-            radioButton1.TabIndex = 0;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "radioButton1";
-            radioButton1.UseVisualStyleBackColor = true;
+            lbField1.AutoSize = true;
+            lbField1.Location = new Point(20, 25);
+            lbField1.Name = "lbField1";
+            lbField1.Size = new Size(38, 15);
+            lbField1.TabIndex = 5;
+            lbField1.Text = "label1";
+            // 
+            // tbField4
+            // 
+            tbField4.Location = new Point(157, 109);
+            tbField4.Name = "tbField4";
+            tbField4.Size = new Size(199, 23);
+            tbField4.TabIndex = 3;
+            // 
+            // tbField3
+            // 
+            tbField3.Location = new Point(157, 80);
+            tbField3.Name = "tbField3";
+            tbField3.Size = new Size(199, 23);
+            tbField3.TabIndex = 2;
+            // 
+            // tbField2
+            // 
+            tbField2.Location = new Point(157, 51);
+            tbField2.Name = "tbField2";
+            tbField2.Size = new Size(199, 23);
+            tbField2.TabIndex = 1;
+            // 
+            // tbField1
+            // 
+            tbField1.Location = new Point(157, 22);
+            tbField1.Name = "tbField1";
+            tbField1.Size = new Size(199, 23);
+            tbField1.TabIndex = 0;
+            // 
+            // radioGroup
+            // 
+            radioGroup.Controls.Add(rbStock);
+            radioGroup.Controls.Add(rbLocations);
+            radioGroup.Controls.Add(rbProducts);
+            radioGroup.Location = new Point(34, 33);
+            radioGroup.Name = "radioGroup";
+            radioGroup.Size = new Size(382, 57);
+            radioGroup.TabIndex = 1;
+            radioGroup.TabStop = false;
+            radioGroup.Text = "Table Options";
+            // 
+            // rbStock
+            // 
+            rbStock.AutoSize = true;
+            rbStock.Location = new Point(271, 22);
+            rbStock.Name = "rbStock";
+            rbStock.Size = new Size(54, 19);
+            rbStock.TabIndex = 2;
+            rbStock.TabStop = true;
+            rbStock.Text = "Stock";
+            rbStock.UseVisualStyleBackColor = true;
+            rbStock.CheckedChanged += rbProducts_CheckedChanged;
+            // 
+            // rbLocations
+            // 
+            rbLocations.AutoSize = true;
+            rbLocations.Location = new Point(157, 22);
+            rbLocations.Name = "rbLocations";
+            rbLocations.Size = new Size(76, 19);
+            rbLocations.TabIndex = 1;
+            rbLocations.TabStop = true;
+            rbLocations.Text = "Locations";
+            rbLocations.UseVisualStyleBackColor = true;
+            rbLocations.CheckedChanged += rbProducts_CheckedChanged;
+            // 
+            // rbProducts
+            // 
+            rbProducts.AutoSize = true;
+            rbProducts.Location = new Point(37, 22);
+            rbProducts.Name = "rbProducts";
+            rbProducts.Size = new Size(72, 19);
+            rbProducts.TabIndex = 0;
+            rbProducts.TabStop = true;
+            rbProducts.Text = "Products";
+            rbProducts.UseVisualStyleBackColor = true;
+            rbProducts.CheckedChanged += rbProducts_CheckedChanged;
             // 
             // listBox1
             // 
@@ -100,28 +197,133 @@
             listBox1.Size = new Size(330, 334);
             listBox1.TabIndex = 2;
             // 
+            // btnAdd
+            // 
+            btnAdd.Location = new Point(60, 162);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(75, 23);
+            btnAdd.TabIndex = 9;
+            btnAdd.Text = "Add";
+            btnAdd.UseVisualStyleBackColor = true;
+            // 
+            // btnDisplay
+            // 
+            btnDisplay.Location = new Point(155, 162);
+            btnDisplay.Name = "btnDisplay";
+            btnDisplay.Size = new Size(75, 23);
+            btnDisplay.TabIndex = 10;
+            btnDisplay.Text = "Display";
+            btnDisplay.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdate
+            // 
+            btnUpdate.Location = new Point(250, 162);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(75, 23);
+            btnUpdate.TabIndex = 11;
+            btnUpdate.Text = "Update";
+            btnUpdate.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(lbDelLoc);
+            groupBox1.Controls.Add(tbDelLoc);
+            groupBox1.Controls.Add(btnDelete);
+            groupBox1.Controls.Add(lbDelProd);
+            groupBox1.Controls.Add(tbDelProd);
+            groupBox1.Location = new Point(34, 321);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(382, 117);
+            groupBox1.TabIndex = 12;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Insert";
+            // 
+            // btnDelete
+            // 
+            btnDelete.Location = new Point(34, 88);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(75, 23);
+            btnDelete.TabIndex = 9;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // lbDelProd
+            // 
+            lbDelProd.AutoSize = true;
+            lbDelProd.Location = new Point(37, 31);
+            lbDelProd.Name = "lbDelProd";
+            lbDelProd.Size = new Size(63, 15);
+            lbDelProd.TabIndex = 5;
+            lbDelProd.Text = "ProductID:";
+            // 
+            // tbDelProd
+            // 
+            tbDelProd.Location = new Point(186, 27);
+            tbDelProd.Name = "tbDelProd";
+            tbDelProd.Size = new Size(170, 23);
+            tbDelProd.TabIndex = 0;
+            // 
+            // lbDelLoc
+            // 
+            lbDelLoc.AutoSize = true;
+            lbDelLoc.Location = new Point(37, 60);
+            lbDelLoc.Name = "lbDelLoc";
+            lbDelLoc.Size = new Size(67, 15);
+            lbDelLoc.TabIndex = 11;
+            lbDelLoc.Text = "LocationID:";
+            // 
+            // tbDelLoc
+            // 
+            tbDelLoc.Location = new Point(186, 56);
+            tbDelLoc.Name = "tbDelLoc";
+            tbDelLoc.Size = new Size(170, 23);
+            tbDelLoc.TabIndex = 10;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DarkSeaGreen;
             ClientSize = new Size(800, 450);
-            Controls.Add(listBox1);
-            Controls.Add(groupBox2);
             Controls.Add(groupBox1);
+            Controls.Add(listBox1);
+            Controls.Add(radioGroup);
+            Controls.Add(Fields);
             Name = "Form1";
             Text = "Form1";
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
+            Fields.ResumeLayout(false);
+            Fields.PerformLayout();
+            radioGroup.ResumeLayout(false);
+            radioGroup.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private GroupBox groupBox1;
-        private GroupBox groupBox2;
-        private RadioButton radioButton3;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
+        private GroupBox Fields;
+        private GroupBox radioGroup;
+        private RadioButton rbStock;
+        private RadioButton rbLocations;
+        private RadioButton rbProducts;
         private ListBox listBox1;
+        private Label lbField3;
+        private Label lbField4;
+        private Label lbField2;
+        private Label lbField1;
+        private TextBox tbField4;
+        private TextBox tbField3;
+        private TextBox tbField2;
+        private TextBox tbField1;
+        private Button btnDisplay;
+        private Button btnAdd;
+        private Button btnUpdate;
+        private GroupBox groupBox1;
+        private Label lbDelLoc;
+        private TextBox tbDelLoc;
+        private Button btnDelete;
+        private Label lbDelProd;
+        private TextBox tbDelProd;
     }
 }

@@ -12,7 +12,10 @@ namespace FINALPROJECT_inventory_
     internal class SqlActions
     {
 
-        private string connectionString = @"Data Source = localhost; Initial Catalog = LoginSystem; User ID = LibraryUser; Password = LibraryLab123!; TrustServerCertificate = True";
+        //private string connectionString = @"Data Source = BB21305\OOP_SQL_JM; Initial Catalog = LoginSystem; User ID = LibraryUser; Password = LibraryLab123!; TrustServerCertificate = True";
+        private string connectionString = @"Data Source = BB21305\OOP_SQL_JM; Initial Catalog = GameShopDB; User ID = LibraryUser; Password = classOOP123!; TrustServerCertificate = True";
+
+
 
         private SqlConnection currConnection;
         private string sqlStatement ="";
@@ -22,7 +25,7 @@ namespace FINALPROJECT_inventory_
             currConnection = new SqlConnection(connectionString);
             currConnection.Open();
 
-            sqlStatement = "SELECT Username FROM UserLogins WHERE Username = @Username";
+            sqlStatement = "SELECT Username FROM Users WHERE Username = @Username";
 
             SqlCommand myQuery = new SqlCommand(sqlStatement, currConnection);
             myQuery.Parameters.AddWithValue("@Username", username);
@@ -43,7 +46,7 @@ namespace FINALPROJECT_inventory_
             currConnection = new SqlConnection(connectionString);
             currConnection.Open();
 
-            sqlStatement = "SELECT Password FROM UserLogins WHERE Username = @Username";
+            sqlStatement = "SELECT Password FROM Users WHERE Username = @Username";
 
 
             SqlCommand myQuery = new SqlCommand(sqlStatement, currConnection);

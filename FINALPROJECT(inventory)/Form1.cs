@@ -8,72 +8,88 @@ namespace FINALPROJECT_inventory_
         public Form1()
         {
             InitializeComponent();
+            rbProducts.Checked = true;
         }
 
-        /* For Login Page / Form              
-
-        username = usernameTB.Trim();
-        password = passwordTB.Trim();
-
-        if (string.IsEmptyOrWhiteSpace(username) || string.IsEmptyOrWhiteSpace(password))
+        public void InterfaceMapping()
         {
-            print "Enter all fields";
-            return;
-        }
-
-        password = encryptPassword(password);
-
-        SqlActions userLogin = new SqlActions();
-
-        //check if user exists
-        if (userLogin.checkExisting(username))  //does exist
-        {
-            //check if password matches DB password
-            bool pwrdMatch = userLogin.checkPassword(username, password);
-
-            if (pwrdMatch)
+            if (rbProducts.Checked)
             {
-                //closes form1 (login form)
-                this.Hide();
+                lbField1.Text = "Name: ";
+                lbField2.Text = "Description: ";
+                lbField3.Text = "Category: ";
+                lbField4.Text = "Unit Price: ";
+                lbField1.Show();
+                lbField2.Show();
+                lbField3.Show();
+                lbField4.Show();
 
-                //creates form2 obj
-                Form2 crudForm = new Form2(this);
-                //opens form2
-                crudForm.Show();
+                tbField1.Show();
+                tbField2.Show();
+                tbField3.Show();
+                tbField4.Show();
 
-                return;
+                lbDelProd.Show();
+                tbDelProd.Show();
+                lbDelLoc.Hide();
+                tbDelLoc.Hide();
             }
-            msgList.Text = "Incorrect Password. Try again.";
-        }
-        else
-        {
-            msgList.Text = "User does not exist. Try again.";
-        }
-    }
-
-        public string encryptPassword(string password)
-        {
-            //using discards obj after use
-            //creates hashing obj
-            using (SHA256 sha = SHA256.Create())
+            else if (rbLocations.Checked)
             {
-                //converts each char to its utf code / num
-                byte[] bytes = Encoding.UTF8.GetBytes(password);
+                lbField1.Text = "Name: ";
+                lbField2.Text = "Address: ";
+                lbField3.Text = "Type: ";
+                lbField4.Text = "";
+                lbField1.Show();
+                lbField2.Show();
+                lbField3.Show();
+                lbField4.Hide();
 
-                //calls the hashing method 
-                byte[] hash = sha.ComputeHash(bytes);
+                tbField1.Show();
+                tbField2.Show();
+                tbField3.Show();
+                tbField4.Hide();
 
-                return Convert.ToBase64String(hash);
+                lbDelProd.Hide();
+                tbDelProd.Hide();
+                lbDelLoc.Show();
+                tbDelLoc.Show();
             }
+            else
+            {
+                lbField1.Text = "ProductID: ";
+                lbField2.Text = "LocationID: ";
+                lbField3.Text = "Quantity: ";
+                lbField4.Text = "";
+                lbField1.Show();
+                lbField2.Show();
+                lbField3.Show();
+                lbField4.Hide();
+
+                tbField1.Show();
+                tbField2.Show();
+                tbField3.Show();
+                tbField4.Hide();
+
+                lbDelProd.Show();
+                tbDelProd.Show();
+                lbDelLoc.Show();
+                tbDelLoc.Show();
+            }
+
         }
 
-        */
+        private void rbProducts_CheckedChanged(object sender, EventArgs e)
+        {
+            InterfaceMapping();
+        }
+
 
 
         /*if user wants to do CRUD on products
 
 
-        
+
          try
         {
            Convert.ToDouble(price)

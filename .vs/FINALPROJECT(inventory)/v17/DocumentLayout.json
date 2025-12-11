@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\JennipherM\\C#\\OOP_ Class\\SemesterProject_OOP\\",
+  "WorkspaceRootPath": "C:\\Users\\Jennipher\\C#_OOP\\SemesterProject_OOP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E396C68-7CDE-44C4-956B-F5BFB24CF001}|FINALPROJECT(inventory)\\FINALPROJECT(inventory).csproj|c:\\jennipherm\\c#\\oop_ class\\semesterproject_oop\\finalproject(inventory)\\sqlactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E396C68-7CDE-44C4-956B-F5BFB24CF001}|FINALPROJECT(inventory)\\FINALPROJECT(inventory).csproj|solutionrelative:finalproject(inventory)\\sqlactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E396C68-7CDE-44C4-956B-F5BFB24CF001}|FINALPROJECT(inventory)\\FINALPROJECT(inventory).csproj|c:\\users\\jennipher\\c#_oop\\semesterproject_oop\\finalproject(inventory)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E396C68-7CDE-44C4-956B-F5BFB24CF001}|FINALPROJECT(inventory)\\FINALPROJECT(inventory).csproj|solutionrelative:finalproject(inventory)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E396C68-7CDE-44C4-956B-F5BFB24CF001}|FINALPROJECT(inventory)\\FINALPROJECT(inventory).csproj|c:\\jennipherm\\c#\\oop_ class\\semesterproject_oop\\finalproject(inventory)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E396C68-7CDE-44C4-956B-F5BFB24CF001}|FINALPROJECT(inventory)\\FINALPROJECT(inventory).csproj|solutionrelative:finalproject(inventory)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E396C68-7CDE-44C4-956B-F5BFB24CF001}|FINALPROJECT(inventory)\\FINALPROJECT(inventory).csproj|c:\\users\\jennipher\\c#_oop\\semesterproject_oop\\finalproject(inventory)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6E396C68-7CDE-44C4-956B-F5BFB24CF001}|FINALPROJECT(inventory)\\FINALPROJECT(inventory).csproj|solutionrelative:finalproject(inventory)\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 83,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,26 +30,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SqlActions.cs",
-              "DocumentMoniker": "C:\\JennipherM\\C#\\OOP_ Class\\SemesterProject_OOP\\FINALPROJECT(inventory)\\SqlActions.cs",
-              "RelativeDocumentMoniker": "FINALPROJECT(inventory)\\SqlActions.cs",
-              "ToolTip": "C:\\JennipherM\\C#\\OOP_ Class\\SemesterProject_OOP\\FINALPROJECT(inventory)\\SqlActions.cs",
-              "RelativeToolTip": "FINALPROJECT(inventory)\\SqlActions.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwIsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Jennipher\\C#_OOP\\SemesterProject_OOP\\FINALPROJECT(inventory)\\Form1.cs",
+              "RelativeDocumentMoniker": "FINALPROJECT(inventory)\\Form1.cs",
+              "ToolTip": "C:\\Users\\Jennipher\\C#_OOP\\SemesterProject_OOP\\FINALPROJECT(inventory)\\Form1.cs [Design]",
+              "RelativeToolTip": "FINALPROJECT(inventory)\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T23:59:25.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T22:52:05.717Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\JennipherM\\C#\\OOP_ Class\\SemesterProject_OOP\\FINALPROJECT(inventory)\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Jennipher\\C#_OOP\\SemesterProject_OOP\\FINALPROJECT(inventory)\\Form1.cs",
               "RelativeDocumentMoniker": "FINALPROJECT(inventory)\\Form1.cs",
-              "ToolTip": "C:\\JennipherM\\C#\\OOP_ Class\\SemesterProject_OOP\\FINALPROJECT(inventory)\\Form1.cs",
+              "ToolTip": "C:\\Users\\Jennipher\\C#_OOP\\SemesterProject_OOP\\FINALPROJECT(inventory)\\Form1.cs",
               "RelativeToolTip": "FINALPROJECT(inventory)\\Form1.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAgwAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwFQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-10T22:19:57.573Z",
               "EditorCaption": ""
