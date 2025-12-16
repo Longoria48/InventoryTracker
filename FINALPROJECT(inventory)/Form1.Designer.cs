@@ -68,21 +68,18 @@
             Fields.Controls.Add(tbField3);
             Fields.Controls.Add(tbField2);
             Fields.Controls.Add(tbField1);
-            Fields.Location = new Point(63, 213);
-            Fields.Margin = new Padding(6);
+            Fields.Location = new Point(34, 100);
             Fields.Name = "Fields";
-            Fields.Padding = new Padding(6);
-            Fields.Size = new Size(709, 459);
+            Fields.Size = new Size(382, 215);
             Fields.TabIndex = 0;
             Fields.TabStop = false;
             Fields.Text = "Insert";
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(464, 346);
-            btnUpdate.Margin = new Padding(6);
+            btnUpdate.Location = new Point(250, 162);
             btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(139, 49);
+            btnUpdate.Size = new Size(75, 23);
             btnUpdate.TabIndex = 11;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = true;
@@ -90,10 +87,9 @@
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(111, 346);
-            btnAdd.Margin = new Padding(6);
+            btnAdd.Location = new Point(60, 162);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(139, 49);
+            btnAdd.Size = new Size(75, 23);
             btnAdd.TabIndex = 9;
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = true;
@@ -102,73 +98,65 @@
             // lbField3
             // 
             lbField3.AutoSize = true;
-            lbField3.Location = new Point(37, 177);
-            lbField3.Margin = new Padding(6, 0, 6, 0);
+            lbField3.Location = new Point(20, 83);
             lbField3.Name = "lbField3";
-            lbField3.Size = new Size(78, 32);
+            lbField3.Size = new Size(38, 15);
             lbField3.TabIndex = 8;
             lbField3.Text = "label3";
             // 
             // lbField4
             // 
             lbField4.AutoSize = true;
-            lbField4.Location = new Point(37, 239);
-            lbField4.Margin = new Padding(6, 0, 6, 0);
+            lbField4.Location = new Point(20, 112);
             lbField4.Name = "lbField4";
-            lbField4.Size = new Size(78, 32);
+            lbField4.Size = new Size(38, 15);
             lbField4.TabIndex = 7;
             lbField4.Text = "label4";
             // 
             // lbField2
             // 
             lbField2.AutoSize = true;
-            lbField2.Location = new Point(37, 115);
-            lbField2.Margin = new Padding(6, 0, 6, 0);
+            lbField2.Location = new Point(20, 54);
             lbField2.Name = "lbField2";
-            lbField2.Size = new Size(78, 32);
+            lbField2.Size = new Size(38, 15);
             lbField2.TabIndex = 6;
             lbField2.Text = "label2";
             // 
             // lbField1
             // 
             lbField1.AutoSize = true;
-            lbField1.Location = new Point(37, 53);
-            lbField1.Margin = new Padding(6, 0, 6, 0);
+            lbField1.Location = new Point(20, 25);
             lbField1.Name = "lbField1";
-            lbField1.Size = new Size(78, 32);
+            lbField1.Size = new Size(38, 15);
             lbField1.TabIndex = 5;
             lbField1.Text = "label1";
             // 
             // tbField4
             // 
-            tbField4.Location = new Point(292, 233);
-            tbField4.Margin = new Padding(6);
+            tbField4.Location = new Point(157, 109);
             tbField4.Name = "tbField4";
-            tbField4.Size = new Size(366, 39);
+            tbField4.Size = new Size(199, 23);
             tbField4.TabIndex = 3;
             // 
             // tbField3
             // 
-            tbField3.Location = new Point(292, 171);
-            tbField3.Margin = new Padding(6);
+            tbField3.Location = new Point(157, 80);
             tbField3.Name = "tbField3";
-            tbField3.Size = new Size(366, 39);
+            tbField3.Size = new Size(199, 23);
             tbField3.TabIndex = 2;
             // 
             // tbField2
             // 
-            tbField2.Location = new Point(292, 109);
-            tbField2.Margin = new Padding(6);
+            tbField2.Location = new Point(157, 51);
             tbField2.Name = "tbField2";
-            tbField2.Size = new Size(366, 39);
+            tbField2.Size = new Size(199, 23);
             tbField2.TabIndex = 1;
             // 
             // tbField1
             // 
-            tbField1.Location = new Point(292, 47);
-            tbField1.Margin = new Padding(6);
+            tbField1.Location = new Point(157, 22);
             tbField1.Name = "tbField1";
-            tbField1.Size = new Size(366, 39);
+            tbField1.Size = new Size(199, 23);
             tbField1.TabIndex = 0;
             // 
             // radioGroup
@@ -176,11 +164,9 @@
             radioGroup.Controls.Add(rbStock);
             radioGroup.Controls.Add(rbLocations);
             radioGroup.Controls.Add(rbProducts);
-            radioGroup.Location = new Point(63, 70);
-            radioGroup.Margin = new Padding(6);
+            radioGroup.Location = new Point(34, 33);
             radioGroup.Name = "radioGroup";
-            radioGroup.Padding = new Padding(6);
-            radioGroup.Size = new Size(709, 122);
+            radioGroup.Size = new Size(382, 57);
             radioGroup.TabIndex = 1;
             radioGroup.TabStop = false;
             radioGroup.Text = "Table Options";
@@ -188,10 +174,9 @@
             // rbStock
             // 
             rbStock.AutoSize = true;
-            rbStock.Location = new Point(503, 47);
-            rbStock.Margin = new Padding(6);
+            rbStock.Location = new Point(271, 22);
             rbStock.Name = "rbStock";
-            rbStock.Size = new Size(102, 36);
+            rbStock.Size = new Size(54, 19);
             rbStock.TabIndex = 2;
             rbStock.TabStop = true;
             rbStock.Text = "Stock";
@@ -201,10 +186,9 @@
             // rbLocations
             // 
             rbLocations.AutoSize = true;
-            rbLocations.Location = new Point(292, 47);
-            rbLocations.Margin = new Padding(6);
+            rbLocations.Location = new Point(157, 22);
             rbLocations.Name = "rbLocations";
-            rbLocations.Size = new Size(145, 36);
+            rbLocations.Size = new Size(76, 19);
             rbLocations.TabIndex = 1;
             rbLocations.TabStop = true;
             rbLocations.Text = "Locations";
@@ -214,10 +198,9 @@
             // rbProducts
             // 
             rbProducts.AutoSize = true;
-            rbProducts.Location = new Point(69, 47);
-            rbProducts.Margin = new Padding(6);
+            rbProducts.Location = new Point(37, 22);
             rbProducts.Name = "rbProducts";
-            rbProducts.Size = new Size(137, 36);
+            rbProducts.Size = new Size(72, 19);
             rbProducts.TabIndex = 0;
             rbProducts.TabStop = true;
             rbProducts.Text = "Products";
@@ -231,11 +214,9 @@
             groupBox1.Controls.Add(btnDelete);
             groupBox1.Controls.Add(lbDelProd);
             groupBox1.Controls.Add(tbDelProd);
-            groupBox1.Location = new Point(63, 685);
-            groupBox1.Margin = new Padding(6);
+            groupBox1.Location = new Point(34, 321);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(6);
-            groupBox1.Size = new Size(709, 250);
+            groupBox1.Size = new Size(382, 117);
             groupBox1.TabIndex = 12;
             groupBox1.TabStop = false;
             groupBox1.Text = "Insert";
@@ -243,27 +224,24 @@
             // lbDelLoc
             // 
             lbDelLoc.AutoSize = true;
-            lbDelLoc.Location = new Point(69, 128);
-            lbDelLoc.Margin = new Padding(6, 0, 6, 0);
+            lbDelLoc.Location = new Point(37, 60);
             lbDelLoc.Name = "lbDelLoc";
-            lbDelLoc.Size = new Size(132, 32);
+            lbDelLoc.Size = new Size(67, 15);
             lbDelLoc.TabIndex = 11;
             lbDelLoc.Text = "LocationID:";
             // 
             // tbDelLoc
             // 
-            tbDelLoc.Location = new Point(345, 119);
-            tbDelLoc.Margin = new Padding(6);
+            tbDelLoc.Location = new Point(186, 56);
             tbDelLoc.Name = "tbDelLoc";
-            tbDelLoc.Size = new Size(312, 39);
+            tbDelLoc.Size = new Size(170, 23);
             tbDelLoc.TabIndex = 10;
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(63, 188);
-            btnDelete.Margin = new Padding(6);
+            btnDelete.Location = new Point(34, 88);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(139, 49);
+            btnDelete.Size = new Size(75, 23);
             btnDelete.TabIndex = 9;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
@@ -272,43 +250,41 @@
             // lbDelProd
             // 
             lbDelProd.AutoSize = true;
-            lbDelProd.Location = new Point(69, 66);
-            lbDelProd.Margin = new Padding(6, 0, 6, 0);
+            lbDelProd.Location = new Point(37, 31);
             lbDelProd.Name = "lbDelProd";
-            lbDelProd.Size = new Size(124, 32);
+            lbDelProd.Size = new Size(63, 15);
             lbDelProd.TabIndex = 5;
             lbDelProd.Text = "ProductID:";
             // 
             // tbDelProd
             // 
-            tbDelProd.Location = new Point(345, 58);
-            tbDelProd.Margin = new Padding(6);
+            tbDelProd.Location = new Point(186, 27);
             tbDelProd.Name = "tbDelProd";
-            tbDelProd.Size = new Size(312, 39);
+            tbDelProd.Size = new Size(170, 23);
             tbDelProd.TabIndex = 0;
             // 
             // dgvResults
             // 
             dgvResults.BackgroundColor = SystemColors.ButtonHighlight;
             dgvResults.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvResults.Location = new Point(793, 84);
+            dgvResults.Enabled = false;
+            dgvResults.Location = new Point(427, 39);
+            dgvResults.Margin = new Padding(2, 1, 2, 1);
             dgvResults.Name = "dgvResults";
             dgvResults.RowHeadersWidth = 82;
-            dgvResults.Size = new Size(681, 492);
+            dgvResults.Size = new Size(367, 231);
             dgvResults.TabIndex = 13;
-            dgvResults.CellClick += dgvResults_CellClick;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSeaGreen;
-            ClientSize = new Size(1486, 960);
+            ClientSize = new Size(818, 531);
             Controls.Add(dgvResults);
             Controls.Add(groupBox1);
             Controls.Add(radioGroup);
             Controls.Add(Fields);
-            Margin = new Padding(6);
             Name = "Form1";
             Text = "Form1";
             Fields.ResumeLayout(false);

@@ -14,7 +14,7 @@ namespace FINALPROJECT_inventory_
     {
 
         //private string connectionString = @"Data Source = BB21305\OOP_SQL_JM; Initial Catalog = LoginSystem; User ID = LibraryUser; Password = LibraryLab123!; TrustServerCertificate = True";
-        private string connectionString = @"Data Source = KELCOS_OMNIBOOK\LONGORIAFA25; Initial Catalog = GameShopDB; User ID=GhadAdmin;Password=Ghad1!; TrustServerCertificate = True";
+        private string connectionString = @"Data Source = BB21305\OOP_SQL_JM; Initial Catalog = GameShopDB; User ID = LibraryUser; Password = classOOP123!; TrustServerCertificate = True";
 
 
         #region Login

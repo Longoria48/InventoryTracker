@@ -85,7 +85,7 @@ namespace FINALPROJECT_inventory_
             string password = encryptPassword(passwordTB.Text.Trim());
 
 
-            string connectionString = @"Data Source = KELCOS_OMNIBOOK\LONGORIAFA25; Initial Catalog = GameShopDB; User ID=GhadAdmin; Password=Ghad1!; TrustServerCertificate = True";
+            string connectionString = @"Data Source = BB21305\OOP_SQL_JM; Initial Catalog = GameShopDB; User ID = LibraryUser; Password = classOOP123!; TrustServerCertificate = True";
 
 
             SqlConnection currConnection = new SqlConnection(connectionString);

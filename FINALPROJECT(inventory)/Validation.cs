@@ -10,23 +10,23 @@ namespace FINALPROJECT_inventory_
 {
     internal class Validation
     {
-        string name =""; //can be product or location name
-        string description= "";
-        string category = "";
-        decimal price = 0.0m;
-        string address = "";
-        string type = "";
-        int quantity = 0;
+        public string name =""; //can be product or location name
+        public string description = "";
+        public string category = "";
+        public string priceTmp = "";
+        public string address = "";
+        public string type = "";
+        public int quantity = 0;
 
         int constructorUsed;
 
         //Product Constructor
-        public Validation(string Name, string Desc, string Category, decimal Price)
+        public Validation(string Name, string Desc, string Category, string Price)
         {
             name = Name.Trim();
             description = Desc.Trim();
             category = Category.Trim();
-            price = (decimal)Price;
+            priceTmp = Price.Trim();
 
             constructorUsed = 1;
         }
@@ -50,14 +50,25 @@ namespace FINALPROJECT_inventory_
 
         public string checkValues()
         {
+            decimal price;
             if (constructorUsed == 1)
             {
-                if(string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(description) || string.IsNullOrWhiteSpace(category))
+                if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(description) || string.IsNullOrWhiteSpace(category) || string.IsNullOrWhiteSpace(priceTmp))
                 {
                     return "Fill in all fields";
                 }
 
-                else if (price <= 0.0m)
+                try
+                {
+                    price = Convert.ToDecimal(priceTmp);
+                }
+                catch
+                {
+                    MessageBox.Show("Unit Price must be a valid number.");
+                    return "Unit Price must be a valid number.";
+                }
+
+                if (price <= 0.0m)
                 {
                     return "Price must be greater then $0.00";
                 }
@@ -71,7 +82,7 @@ namespace FINALPROJECT_inventory_
                 else if (type != "store" && type != "warehouse")
                 {
                     return "Type must be either \"store\" or \"warehouse\"";
-               }
+                }
             }
             else // constructor 3
             {

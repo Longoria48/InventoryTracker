@@ -38,9 +38,10 @@ namespace FINALPROJECT_inventory_
 
             //Format Data Grid View
             dgvResults.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvResults.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dgvResults.ReadOnly = true;
-            dgvResults.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvResults.MultiSelect = false;
+           // dgvResults.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+           // dgvResults.MultiSelect = false;
             dgvResults.AllowUserToAddRows = false;
         }
 
@@ -131,13 +132,7 @@ namespace FINALPROJECT_inventory_
             {
                 if (rbProducts.Checked)
                 {
-                    if (!decimal.TryParse(tbField4.Text.Trim(), out decimal price))
-                    {
-                        MessageBox.Show("Unit Price must be a valid number.");
-                        return;
-                    }
-
-                    Validation v = new Validation(tbField1.Text, tbField2.Text, tbField3.Text, price);
+                    Validation v = new Validation(tbField1.Text, tbField2.Text, tbField3.Text, tbField4.Text);
                     string msg = v.checkValues();
 
                     if (msg != "")
@@ -145,7 +140,7 @@ namespace FINALPROJECT_inventory_
                         MessageBox.Show(msg);
                         return;
                     }
-                    db.InsertProduct(tbField1.Text.Trim(), tbField2.Text.Trim(), tbField3.Text.Trim(), price);
+                    db.InsertProduct(v.name, tbField2.Text.Trim(), tbField3.Text.Trim(), Convert.ToDecimal(tbField4.Text));
                     RefreshGrid();
                 }
                 else if (rbLocations.Checked)
