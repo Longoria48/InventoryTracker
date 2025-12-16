@@ -13,7 +13,7 @@ namespace FINALPROJECT_inventory_
         string name =""; //can be product or location name
         string description= "";
         string category = "";
-        double price = 0.0;
+        decimal price = 0.0m;
         string address = "";
         string type = "";
         int quantity = 0;
@@ -21,12 +21,12 @@ namespace FINALPROJECT_inventory_
         int constructorUsed;
 
         //Product Constructor
-        public Validation(string Name, string Desc, string Category, double Price)
+        public Validation(string Name, string Desc, string Category, decimal Price)
         {
             name = Name.Trim();
             description = Desc.Trim();
             category = Category.Trim();
-            price = Price;
+            price = (decimal)Price;
 
             constructorUsed = 1;
         }
@@ -36,7 +36,7 @@ namespace FINALPROJECT_inventory_
         {
             name = Name.Trim();
             address = Address.Trim();
-            type = Type.Trim();
+            type = Type.Trim().ToLower();
 
             constructorUsed = 2;
         }
@@ -52,12 +52,12 @@ namespace FINALPROJECT_inventory_
         {
             if (constructorUsed == 1)
             {
-                if(string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(description) || string.IsNullOrWhiteSpace(category) || price == 0.0)
+                if(string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(description) || string.IsNullOrWhiteSpace(category))
                 {
                     return "Fill in all fields";
                 }
 
-                else if (price <= 0.0)
+                else if (price <= 0.0m)
                 {
                     return "Price must be greater then $0.00";
                 }
@@ -68,9 +68,9 @@ namespace FINALPROJECT_inventory_
                 {
                     return "Fill in all fields";
                 }
-                else if (type != "Store" || type != "Warehouse")
+                else if (type != "store" && type != "warehouse")
                 {
-                    return "Type must be either \"Store\" or \"Warehouse\"";
+                    return "Type must be either \"store\" or \"warehouse\"";
                }
             }
             else // constructor 3

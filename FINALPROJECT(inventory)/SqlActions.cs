@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,9 +14,10 @@ namespace FINALPROJECT_inventory_
     {
 
         //private string connectionString = @"Data Source = BB21305\OOP_SQL_JM; Initial Catalog = LoginSystem; User ID = LibraryUser; Password = LibraryLab123!; TrustServerCertificate = True";
-        private string connectionString = @"Data Source = BB21305\OOP_SQL_JM; Initial Catalog = GameShopDB; User ID = LibraryUser; Password = classOOP123!; TrustServerCertificate = True";
+        private string connectionString = @"Data Source = KELCOS_OMNIBOOK\LONGORIAFA25; Initial Catalog = GameShopDB; User ID=GhadAdmin;Password=Ghad1!; TrustServerCertificate = True";
 
 
+        #region Login
 
         private SqlConnection currConnection;
         private string sqlStatement ="";
@@ -48,7 +50,6 @@ namespace FINALPROJECT_inventory_
 
             sqlStatement = "SELECT Password FROM Users WHERE Username = @Username";
 
-
             SqlCommand myQuery = new SqlCommand(sqlStatement, currConnection);
 
             myQuery.Parameters.AddWithValue("@Username", username);
@@ -64,81 +65,172 @@ namespace FINALPROJECT_inventory_
             return false;
 
         }
+        #endregion
 
-        //Create Products
-        public void insertProduct(string name, string desc, string category, double price)
+        #region Data - DataTable
+        public DataTable GetProducts()
         {
-            currConnection = new SqlConnection(connectionString);
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string sql = "SELECT ProductID, Name, Description, Category, UnitPrice FROM Products;";
 
-            currConnection.Open();
+                using(SqlCommand cmd = new SqlCommand(sql, conn))
+                using(SqlDataAdapter da = new SqlDataAdapter(cmd))
+                {
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    return dt;
+                }
+            }
+        }
+        public DataTable GetLocations()
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string sql = "SELECT LocationID, Name, Address, Type FROM Locations;";
 
-            sqlStatement = "INSERT INTO Products (Name, Description, Category, Price) VALUES (@Name, @Description, @Category, @Price)";
-
-            SqlCommand myQuery = new SqlCommand(sqlStatement, currConnection);
-
-            myQuery.Parameters.AddWithValue("@Name", name);
-            myQuery.Parameters.AddWithValue("@Description", desc);
-            myQuery.Parameters.AddWithValue("@Category", category);
-            myQuery.Parameters.AddWithValue("@Price", price);
-
-            myQuery.ExecuteNonQuery();
-
-            currConnection.Close();
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                {
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    return dt;
+                }
+            }
         }
 
-
-
-
-        //Create Locations
-        public void insertLocation()
+        public DataTable GetStockOnHand()
         {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string sql = @"SELECT s.ProductID, p.Name AS ProductName,
+                                      s.LocationID, l.Name AS LocationName,
+                                      s.Quantity
+                               FROM StockOnHand s
+                               JOIN Products p ON p.ProductID = s.ProductID
+                               JOIN Locations l ON l.LocationID = s.LocationID;";
 
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                {
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    return dt;
+                }
+            }
+        }
+        #endregion
+
+        #region Insert Sqls
+        public void InsertProduct(string name, string desc, string category, decimal unitPrice)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string sql = @"INSERT INTO Products(Name, Description, Category, UnitPrice)
+                               VALUES (@Name, @Description, @Category, @UnitPrice);";
+
+                using (SqlCommand cmd = new SqlCommand(sql,conn))
+                {
+                    cmd.Parameters.AddWithValue("@Name", name);
+                    cmd.Parameters.AddWithValue("@Description", desc);
+                    cmd.Parameters.AddWithValue("@Category", category);
+                    cmd.Parameters.AddWithValue("@UnitPrice", unitPrice);
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
 
-        //Create Stock(?)
-        public void insertStock()
+        public void InsertLocation(string name, string address, string type)
         {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string sql = @"INSERT INTO Locations(Name, Address, Type)
+                               VALUES (@Name, @Address, @Type);";
 
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Name", name);
+                    cmd.Parameters.AddWithValue("@Address", address);
+                    cmd.Parameters.AddWithValue("@Type", type);
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
-
-
-
-        //Read For All Tables
-        public void readTable(string table)
+        public void InsertStock(int productId, int locationId, int quantity)
         {
-            currConnection = new SqlConnection(connectionString);
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string sql = @"INSERT INTO StockOnHand(ProductID, LocationID, Quantity)
+                               VALUES (@ProductID, @LocationID, @Quantity);";
 
-            currConnection.Open();
-
-            sqlStatement = "SELECT * FROM @Table";
-
-            SqlCommand myQuery = new SqlCommand(sqlStatement, currConnection);
-
-            myQuery.Parameters.AddWithValue("@Table", table);
-            myQuery.ExecuteNonQuery();
-
-            currConnection.Close();
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@ProductID", productId);
+                    cmd.Parameters.AddWithValue("@LocationID", locationId);
+                    cmd.Parameters.AddWithValue("@Quantity", quantity);
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
+        #endregion
 
 
+        #region Delete Sqls
         //Delete For All Tables
-        public void deleteData(string table, string field, string condition)
+        public void DeleteProduct(int productId)
         {
-            currConnection = new SqlConnection(connectionString);
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string sql = "DELETE FROM Products WHERE ProductID = @id;";
 
-            currConnection.Open();
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", productId);
+                    cmd.ExecuteNonQuery();
+                }
 
-            sqlStatement = "DELETE FROM @Table WHERE @Field = @Condition";
-
-            SqlCommand myQuery = new SqlCommand(sqlStatement, currConnection);
-
-            myQuery.Parameters.AddWithValue("@Table", table);
-            myQuery.Parameters.AddWithValue("@Field", field);
-            myQuery.Parameters.AddWithValue("@Condition", condition);
-            myQuery.ExecuteNonQuery();
-
-            currConnection.Close();
+            }
         }
+        public void DeleteLocation(int locationId)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string sql = "DELETE FROM Locations WHERE LocationID = @id;";
+
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", locationId);
+                    cmd.ExecuteNonQuery();
+                }
+
+            }
+        }
+
+        public void DeleteStock(int productId, int locationId)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string sql = "DELETE FROM StockOnHand WHERE ProductID = @p AND LocationID = @l;";
+
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@p", productId);
+                    cmd.Parameters.AddWithValue("@l", locationId);
+                    cmd.ExecuteNonQuery();
+                }
+
+            }
+        }
+        #endregion
 
 
         //Update For (?) -- NEEDS FINISHED
