@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\JennipherM\\C#\\OOP_ Class\\FinalProject_OOP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA67E7A-9A34-4621-AC25-BD4C5AE31F8C}|FinalProject_OOP\\FinalProject_OOP.csproj|c:\\jennipherm\\c#\\oop_ class\\finalproject_oop\\finalproject_oop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA67E7A-9A34-4621-AC25-BD4C5AE31F8C}|FinalProject_OOP\\FinalProject_OOP.csproj|solutionrelative:finalproject_oop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA67E7A-9A34-4621-AC25-BD4C5AE31F8C}|FinalProject_OOP\\FinalProject_OOP.csproj|c:\\jennipherm\\c#\\oop_ class\\finalproject_oop\\finalproject_oop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CA67E7A-9A34-4621-AC25-BD4C5AE31F8C}|FinalProject_OOP\\FinalProject_OOP.csproj|solutionrelative:finalproject_oop\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA67E7A-9A34-4621-AC25-BD4C5AE31F8C}|FinalProject_OOP\\FinalProject_OOP.csproj|c:\\jennipherm\\c#\\oop_ class\\finalproject_oop\\finalproject_oop\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA67E7A-9A34-4621-AC25-BD4C5AE31F8C}|FinalProject_OOP\\FinalProject_OOP.csproj|solutionrelative:finalproject_oop\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA67E7A-9A34-4621-AC25-BD4C5AE31F8C}|FinalProject_OOP\\FinalProject_OOP.csproj|c:\\jennipherm\\c#\\oop_ class\\finalproject_oop\\finalproject_oop\\sqlactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA67E7A-9A34-4621-AC25-BD4C5AE31F8C}|FinalProject_OOP\\FinalProject_OOP.csproj|solutionrelative:finalproject_oop\\sqlactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA67E7A-9A34-4621-AC25-BD4C5AE31F8C}|FinalProject_OOP\\FinalProject_OOP.csproj|c:\\jennipherm\\c#\\oop_ class\\finalproject_oop\\finalproject_oop\\validation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA67E7A-9A34-4621-AC25-BD4C5AE31F8C}|FinalProject_OOP\\FinalProject_OOP.csproj|solutionrelative:finalproject_oop\\validation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 302,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\JennipherM\\C#\\OOP_ Class\\FinalProject_OOP\\FinalProject_OOP\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "FinalProject_OOP\\Form1.Designer.cs",
+              "ToolTip": "C:\\JennipherM\\C#\\OOP_ Class\\FinalProject_OOP\\FinalProject_OOP\\Form1.Designer.cs",
+              "RelativeToolTip": "FinalProject_OOP\\Form1.Designer.cs",
+              "ViewState": "AgIAAIMBAAAAAAAAAAAqwJIBAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T21:34:36.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Validation.cs",
+              "DocumentMoniker": "C:\\JennipherM\\C#\\OOP_ Class\\FinalProject_OOP\\FinalProject_OOP\\Validation.cs",
+              "RelativeDocumentMoniker": "FinalProject_OOP\\Validation.cs",
+              "ToolTip": "C:\\JennipherM\\C#\\OOP_ Class\\FinalProject_OOP\\FinalProject_OOP\\Validation.cs",
+              "RelativeToolTip": "FinalProject_OOP\\Validation.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T19:23:51.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SqlActions.cs",
+              "DocumentMoniker": "C:\\JennipherM\\C#\\OOP_ Class\\FinalProject_OOP\\FinalProject_OOP\\SqlActions.cs",
+              "RelativeDocumentMoniker": "FinalProject_OOP\\SqlActions.cs",
+              "ToolTip": "C:\\JennipherM\\C#\\OOP_ Class\\FinalProject_OOP\\FinalProject_OOP\\SqlActions.cs",
+              "RelativeToolTip": "FinalProject_OOP\\SqlActions.cs",
+              "ViewState": "AgIAAFQBAAAAAAAAAAAcwPEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T16:24:32.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\JennipherM\\C#\\OOP_ Class\\FinalProject_OOP\\FinalProject_OOP\\Form1.cs",
+              "RelativeDocumentMoniker": "FinalProject_OOP\\Form1.cs",
+              "ToolTip": "C:\\JennipherM\\C#\\OOP_ Class\\FinalProject_OOP\\FinalProject_OOP\\Form1.cs",
+              "RelativeToolTip": "FinalProject_OOP\\Form1.cs",
+              "ViewState": "AgIAALAAAAAAAAAAAAAowMMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T02:14:00.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\JennipherM\\C#\\OOP_ Class\\FinalProject_OOP\\FinalProject_OOP\\Form1.cs",
+              "RelativeDocumentMoniker": "FinalProject_OOP\\Form1.cs",
+              "ToolTip": "C:\\JennipherM\\C#\\OOP_ Class\\FinalProject_OOP\\FinalProject_OOP\\Form1.cs [Design]",
+              "RelativeToolTip": "FinalProject_OOP\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T01:59:44.841Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 129,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
